@@ -1,0 +1,78 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Inventario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+  </head>
+  <body>
+        <div class="estilo">
+      <h1>Inventario de un negocio con listas enlazadas</h1>
+      <p class="p1">Registro de artículos</p>
+      <div>
+            <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 mb-8">
+        <div>
+            <label for="number">Código:</label>
+            <input type="number" id="codigo">
+        </div>
+        <div>
+            <label for="name">Nombre:</label>
+            <input type="text" id="nombre"> 
+        </div>
+        <div>
+            <label for="number">Precio:</label>
+            <input type="number" id="precio">
+        </div>
+        <div>
+            <label for="number">Cantidad:</label>
+            <input type="number" id="cantidad">
+        </div>
+        <div>
+            <label for="name">Descripción:</label>
+            <input type="text" id="descripcion"> 
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary" id="btnAgregar">Añadir</button>
+        </div>
+
+        <table id="tableInfo" class="table">
+            <tbody>
+                <tr>
+                    <td>Total de Artículos</td>
+                    <td id="TotalArticulos"></td>
+                </tr>
+                <tr>
+                    <td>Costo Total</td>
+                    <td id="CostoTotal"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <div>
+
+        <table id="tableArt" class="table">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <h1>Registro:</h1>
+    <p id="toString"></p>
+  </body>
+  <script src="main.js" type="module"></script>
+</html>
